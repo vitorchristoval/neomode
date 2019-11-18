@@ -1,0 +1,209 @@
+.c-row{
+  margin:0;
+}
+body{
+  background: #F9F9F9;
+  color: #4A4A4A;
+}
+.menu{
+  border: 1px solid #F1F1F1;
+  background: #fff;
+  height: 100%;
+  padding: 20px;
+  padding-bottom: 35%;
+}
+.menu-short{
+  overflow: hidden;
+  width: 80px;
+  border: 1px solid #F1F1F1;
+  background: transparent;
+  height: 100vh;
+  padding: 20px;
+  padding-bottom: 35%;
+}
+.button-menu button{
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 50px;
+  width: 25px;
+  font-size: 12px;
+  height: 25px;
+  position: absolute;
+  left: 296px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.menu-short > .button-menu button{
+  background: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 50px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 65px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.menu-short > .itens{
+  display: none
+}
+.logo img{
+  width: 250px;
+}
+.logo-short img{
+  width: 40px;
+}
+.itens{
+  margin-top: 40%;
+  color: #80868B;
+}
+.item a{
+  color: #80868B;
+  font-weight: 600;
+}
+.item li{
+  margin-top: 10px;
+}
+.item h5{
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.menu-visto {
+  color:#01BFB5 !important;
+}
+ul{
+  list-style: none;
+}
+.etapas-div{
+  margin:35px;
+}
+.steps{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.progressbar {
+  counter-reset: step;
+
+    margin-top: 2.3%;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 12%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+.progressbar li:first-child > button, .progressbar li:last-child > button{
+  position: absolute;
+  margin-top: -38px;
+  width: 120%;
+  margin-left: -85px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.progressbar li:first-child > button{
+  background: #fff;
+  color: #000;
+  border: 1px solid #f1f1f1;
+}
+.progressbar li:last-child > button{
+  background: #01BFB5;
+  color: #fff;
+}
+.progressbar li:before {
+  width: 15px;
+  height: 15px;
+  content: '';
+  counter-increment: step;
+  line-height: 15px;
+  border: 2px solid rgb(221, 221, 221);
+  display: block;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 3px;
+  content: '';
+  position: absolute;
+  background-color: rgb(221, 221, 221);
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: #6D4AED;
+}
+.progressbar li.active:before {
+  border-color: #6D4AED;
+  background: #6D4AED;
+  
+}
+.progressbar li.active + li:after {
+  background-color: #01BFB5;
+}
+.first-step{
+  margin-left: 35%;
+  margin-top: 15%;
+  width: 600px;
+}
+.first-step > .form-group > .form-control{
+  width: 60% !important;
+  margin: auto;
+}
+.first-step > .form-group{
+  margin: auto;
+}
+.first-step > .form-group > label{
+  margin-left: 20%;
+  margin-top: 2%;
+}
+.first-step h3{
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+.cores{
+  height: 111px;
+    background: none;
+    border: none;
+    width: 216px;
+    margin-left: -5px;
+    margin-top: -7px;
+    padding: 0;
+}
+.color-text{
+  position: absolute;
+    margin-top: -40px;
+    margin-left: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.card-color{
+  border-radius: 7px;
+  margin: 10px;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  text-align:center;
+}
+.card-color p{
+  font-weight: 600;
+}
